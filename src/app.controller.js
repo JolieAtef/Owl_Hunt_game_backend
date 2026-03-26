@@ -11,8 +11,7 @@ export const bootstrap = ()=>{
     
     app.use(
         cors({
-            // origin: process.env.Frontend_domain
-            origin:"*"
+            origin: process.env.Frontend_domain     
         })
     )
     
