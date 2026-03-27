@@ -8,10 +8,10 @@ dotenv.config()
 
 export const bootstrap = ()=>{
     const app = express()
-    
+   
     app.use(
         cors({
-            origin: process.env.Frontend_domain     
+            origin: [process.env.Frontend_domain ,"http://localhost:5500"]    
         })
     )
     
